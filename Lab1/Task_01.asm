@@ -4,13 +4,12 @@ Include irvine32.inc
 .code
 Main Proc
 ;instructions go here
-Mov 	eax, 30h		; Assembly Language is NOT case sensitive
+Mov 	eax, 30h 	;Assembly Language is NOT case sensitive
 Mov 	ebx, 20h
-Mov 	ecx, 0h
-
-Add 	ecx, eax   ; Adding first number in ecx
-Add 	ecx, ebx   ; Adding second number in ecx
+Mov     ecx, 0h
+Add 	ecx, eax
+Add     ecx, ebx
 Call 	dumpregs	;displays the result on the screen by displaying all register values
 Exit
 Main endp
-End main
+End main 
